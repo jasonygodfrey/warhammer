@@ -33,17 +33,24 @@ function ThreeScene() {
     loader.load(
       'ebonchill_magic_sword/scene.gltf',
       (gltf) => {
+        console.log("GLTF Model:", gltf.scene); // Debugging: check if model is loaded
+
+        gltf.scene.scale.set(0.006, 0.006, 0.006); // Scale the model down
+        gltf.scene.position.y = 5; // Move the model down by 5 units
+
         scene.add(gltf.scene);
-        gltf.scene.scale.set(0.5, 0.5, 0.5);
-        gltf.scene.position.set(-5.9, 1.2, 0);
 
         if (gltf.animations && gltf.animations.length) {
           mixer = new THREE.AnimationMixer(gltf.scene);
           mixer.clipAction(gltf.animations[0]).play();
         }
       },
-      undefined,
-      error => console.error('An error happened while loading the model:', error)
+      (xhr) => {
+        console.log((xhr.loaded / xhr.total * 100) + '% loaded'); // Loading progress
+      },
+      (error) => {
+        console.error('An error happened while loading the model:', error);
+      }
     );
 
     // Post-processing: Bloom effect

@@ -29,9 +29,9 @@ function ThreeScene() {
       'ebonchill_magic_sword/scene.gltf', // Path to the model
       (gltf) => {
         console.log("Model loaded successfully");
-        scene.add(gltf.scene);
+        //scene.add(gltf.scene);
         gltf.scene.scale.set(0.4, 0.4, 0.4); // Scale the model to a visible size
-        gltf.scene.position.set(-25, 0, 0); // Center the model
+        gltf.scene.position.set(-250, 0, 0); // Center the model
         // Add a BoxHelper to visualize the bounding box
         const boxHelper = new THREE.BoxHelper(gltf.scene, 0xffff00);
         scene.add(boxHelper);

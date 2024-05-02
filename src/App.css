@@ -1,10 +1,13 @@
-
 .App {
   text-align: center;
   height: 100vh;
-  background-image: url('./background.png');
-  background-size: cover;
-  background-position: center;
+  background-color: #3c1b1b; /* Dark red */
+  /* Gradient */
+  background: linear-gradient(135deg, #3c1b1b, #000000); /* Dark red to black */
+  /* Layer the PNG image on top */
+  background-image: url('./background.png'), linear-gradient(135deg, #3c1b1b, #000000);
+  background-size: cover, cover;
+  background-position: center, center;
 }
 
 /* Adjust the content container if necessary */
