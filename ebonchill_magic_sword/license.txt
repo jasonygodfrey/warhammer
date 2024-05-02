@@ -1,0 +1,11 @@
+Model Information:
+* title:	Imperial Guard
+* source:	https://sketchfab.com/3d-models/imperial-guard-5ac894c9e63243f69a38ba89bf556030
+* author:	Egorushca (https://sketchfab.com/egorushca)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Imperial Guard" (https://sketchfab.com/3d-models/imperial-guard-5ac894c9e63243f69a38ba89bf556030) by Egorushca (https://sketchfab.com/egorushca) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
